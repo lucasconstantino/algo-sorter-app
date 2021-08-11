@@ -1,8 +1,11 @@
-const Footer = ({ sort, bubbleSort }) => {
+const Footer = ({ sort, bubbleSort, selectionSort }) => {
   return (
     <div className='Footer'>
-      <button onClick={sort}>Randomize </button>
+      <button className='red' onClick={sort}>
+        Randomize{" "}
+      </button>
       <button onClick={bubbleSort}> Bubble Sort</button>
+      <button onClick={selectionSort}>Selection Sort</button>
     </div>
   );
 };
