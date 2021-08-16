@@ -12,7 +12,9 @@ function App() {
   const [rows, setRows] = useState([]);
   const [arrayAccessCounter, setArrayAccessCounter] = useState(0);
   const [comparisonCounter, setComparisonCounter] = useState(0);
+  //_____________________Functions________________________________________
 
+  //randomize graph
   const randomize = () => {
     const tempArr = [];
     for (var i = 0; i < numRow; i++) {
@@ -24,6 +26,7 @@ function App() {
     setRows((rows) => tempArr);
   };
 
+  //setStates running program
   const changeRunningAlgorithm = (running) => {
     if (running) {
       setRunningAlgorithm(true);
@@ -31,6 +34,8 @@ function App() {
       setRunningAlgorithm(false);
     }
   };
+
+  //____________________Sorters_start___________________________________
 
   const bubbleSort = () => {
     let tempArr = [...rows];
@@ -110,6 +115,7 @@ function App() {
       }, 50 * numRow);
     }
   };
+  //______________________Sorters_End______________________________
 
   return (
     <div className='App'>
