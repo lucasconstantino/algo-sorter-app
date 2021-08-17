@@ -2,37 +2,64 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: red;
+  color: blue;
+}
+html {
+  height: 100%;
+  background-color: #023047;
+}
+
+.Header {
+  background-color: #024668;
+  font-size: 50px;
+  padding: 1%;
+  border: 4px solid #023047;
+  color: #fb8600ca;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.DisplayAlgo {
+  border: 4px solid #023047;
+  min-height: 640px;
+  background-color: #8ecae6;
+  --width: auto;
+  width: var(--width);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+}
+.DisplayAlgoLine {
+  width: 10px;
+  background-color: rgb(231, 240, 230);
+  border: 0.1px solid #023047;
+  margin-top: auto;
+}
+.Footer {
+  background-color: #023047;
+  width: auto;
+  height: 100%;
+}
+.displayDiv {
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  color: #494949 !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 1%;
+  margin: 1%;
+  border: 4px solid #494949 !important;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  border-radius: 20px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  color: #ffffff !important;
+  background: #f6b93b;
+  border-color: #f6b93b !important;
+  transition: all 0.4s ease 0s;
 }
